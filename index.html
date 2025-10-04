@@ -1,92 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacktoberfest - Developer Profile Card Showcase</title>
+    <title>Personal Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- custom icons -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div class="background-aurora"></div>
+    <!-- header design -->
+     <header class="header">
+        <a href="#" class="logo">Portfolio</a>
 
-    <div class="container">
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <h2 class="logo">Profile Showcase</h2>
-            <div class="nav-links">
-                <a href="https://github.com/dsawithaditi/Hacktoberfest2025" target="_blank" class="nav-link">
-                    <i class="ri-github-fill"></i> GitHub Repo
-                </a>
-                <a href="https://github.com/dsawithaditi/Hacktoberfest2025#how-to-contribute" target="_blank"
-                    class="nav-cta">
-                    Contribute <i class="ri-arrow-right-line"></i>
-                </a>
-            </div>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            
         </nav>
+     </header>
 
-        <header class="hero">
-            <div class="hero-content">
-                <h1>The Contributor Gallery</h1>
-                <p class="subtitle">A showcase of creative developer profile cards from the open-source community. Built
-                    for Hacktoberfest 2025.</p>
-                <a href="https://github.com/dsawithaditi/Hacktoberfest2025#how-to-contribute" target="_blank"
-                    class="hero-cta">Start Contributing Today</a>
+
+     <!-- home section design -->
+      <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Arnab Roy</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>NSEC BCA"25 || MLSA|| Aspiring MERN Stack Developer|| Technical Enthusiast</p>
+            <div class="social-media">
+                <a href="https://mvp.microsoft.com/en-US/studentambassadors/profile/09b6f333-b25e-47e2-b71b-d4931598d793"><i class='bx bxl-microsoft'></i></a>
+                <a href="https://www.linkedin.com/in/arnab825/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/arnab825"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100050652731666"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/rarnab225/"><i class='bx bxl-instagram'></i></a>
+                
+                
+
             </div>
-        </header>
+            <a href="pdf/CV_2024050520194291.pdf" class="btn" type="pdf" download="CV_Arnab.pdf">Download CV</a>
 
-        <main>
-            <div class="search-container">
-                <i class="ri-search-line"></i>
-                <input type="text" id="search-input" placeholder="Search by name, bio, or tags (e.g., minimalist)...">
-            </div>
 
-            <div id="contributors-container">
-            </div>
-            <div id="sentinel"></div>
-            <div id="loader"></div>
-            <p id="no-results" class="no-results-message">No contributors found matching your search.</p>
-        </main>
-    </div>
-
-    <div id="modal" class="modal-overlay">
-        <div class="modal-content">
-            <button id="modal-close" class="modal-close-button">&times;</button>
-            <div id="modal-iframe-container"></div>
-            <div id="modal-info"></div>
         </div>
-    </div>
 
-    <div id="preview-modal" class="modal-overlay">
-        <div class="preview-modal-content">
-            <div class="preview-modal-header">
-                <h3>Device Preview</h3>
-                <div id="device-controls" class="device-controls">
-                    <button data-device="mobile" title="Mobile View"><i class="ri-smartphone-line"></i></button>
-                    <button data-device="tablet" title="Tablet View"><i class="ri-tablet-line"></i></button>
-                    <button data-device="desktop" class="active" title="Desktop View"><i
-                            class="ri-computer-line"></i></button>
+        <div class="home-img">
+            <img src="images/WhatsApp Image 2024-08-19 at 10.25.59_29c47c33.png" alt="">
+        </div>
+      </section>
+
+
+      <!-- about section design -->
+      <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/1714911908589.jpeg" alt="">
+        </div>
+    
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <!-- <h3>Frontend Developer</h3> -->
+            <p class="about-text">
+                Embarking on my journey at Netaji Subhash Engineering College fills me with an electrifying blend of anticipation and ambition! With a fervent dedication to honing my craft in Java, C, DSA, Python, and Web Development, I'm poised to set the stage ablaze with my relentless pursuit of excellence.
+                <span class="read-more-text">Armed with an unwavering spirit and an insatiable hunger for knowledge, I am primed to carve my path to triumph, fueled by the sheer force of my hard work and unwavering determination. Watch out world, for greatness beckons!</span>
+            </p>
+            <button class="btn read-more-btn">Read More</button>
+        </div>
+    </section>
+
+
+
+       <!-- services section design -->
+        <section class="services" id="services">
+            <h2 class="heading">Our <span>Services</span></h2>
+            <div class="service-container">
+                <div class="service-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                    <p class="service-text">
+                        When I think about web development, it feels like piecing together a dynamic puzzle. As a MERN stack developer, I love the balance of working on both the front-end and back-end—building sleek, responsive interfaces with React, while ensuring everything runs smoothly on the server side with Node.js and Express, all powered by MongoDB in the background.
+                        <span class="read-more-text">It's exciting to create web applications that not only look great but are also fast, scalable, and efficient. There's something deeply satisfying about seeing an idea come to life, from a rough concept to a fully functional web app. The constant learning and evolving in this space keeps me on my toes, whether I'm optimizing performance or exploring new features to enhance user experience.</span>
+                    </p>
+                    <button class="btn read-more-btn">Read More</button>
                 </div>
-                <button id="preview-modal-close" class="modal-close-button">&times;</button>
+    
+                <div class="service-box">
+                    <i class='bx bxs-game'></i>
+                    <h3>Game Development Services</h3>
+                    <p class="service-text">When I think about Game Development Services, it feels like working towards a dream I’ve always had—to become a successful game developer. It’s about more than just coding; it’s about creating worlds, stories, and experiences that captivate players.  <span class="read-more-text">There’s something special about building a game from the ground up, from prototyping ideas to crafting immersive 2D or 3D environments, and even experimenting with multiplayer setups that bring people together. Every step I take in learning new tools and techniques brings me closer to turning that dream into reality, creating games that aren’t just fun to play but also leave a lasting impression.</span> </p>
+                    <button class="btn read-more-btn">Read More</button>
+                </div>
+    
+                <div class="service-box">
+                    <i class='bx bx-desktop'></i>
+                    <h3>Software Development Services</h3>
+                    <p class="service-text">When it comes to Software Development Services, I think about it as crafting tailored solutions that solve real problems.With C, I get to dive deep into the fundamentals, working close to the hardware and understanding the core of how things function.
+                        <span class="read-more-text">Java lets me build structured, object-oriented programs, from backend systems to Android apps, where scalability and efficiency are key. Python is my go-to for automation, scripting, and AI—its simplicity combined with powerful libraries makes it perfect for quick solutions or complex machine learning models. Then there’s JavaScript, which opens up the web world to me, allowing me to bring interactive and dynamic experiences to life in the browser. And to keep everything organized, Git and GitHub are my essential companions—ensuring that my code is always backed up, versioned, and ready to collaborate with others. </span> </p>
+                        <button class="btn read-more-btn">Read More</button>
+                </div>
+    
+    
             </div>
-            <div id="preview-iframe-container" class="preview-iframe-container view-desktop">
-                <iframe id="preview-iframe"></iframe>
-            </div>
-            <div class="preview-modal-footer">
-                <a href="#" id="preview-cta" target="_blank" class="hero-cta">
-                    Go to Live Project <i class="ri-external-link-line"></i>
-                </a>
-            </div>
-        </div>
-    </div>
+           
+        </section>
 
-    <script src="js/main.js"></script>
+        <!-- portfolio section design -->
+         <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Project</span></h2>
+
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="images/Porfolio1.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Real Estate Website</h4>
+                        <p>This repository contains the code for a functional replica of the real estate project, built using HTML and Tailwind CSS.</p>
+                        <a href="https://github.com/arnab825/real-estate-project-main"><i class='bx bx-link-external'  ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/Portfolio2.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Bridal Parlour</h4>
+                        <p>This repository showcases a complete codebase for a fully functional bridal parlour website built using HTML and CSS.</p>
+                        <a href="https://github.com/arnab825/bridal-tutorial-ych"><i class='bx bx-link-external'  ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/Portfolio3.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Application Form</h4>
+                        <p>This repository features a fully functional IIESR application form, meticulously crafted using HTML. </p>
+                        <a href="https://github.com/arnab825/IIESER_Application_Form"><i class='bx bx-link-external'  ></i></a>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- contact section design -->
+         <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <form action="contact.php" method="POST">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="mobile" placeholder="Mobile Number">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+            
+            
+         </section>
+
+         <!-- footer design -->
+          <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Arnab Roy | All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#" id="scrollToTop"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+          </footer>
+
+
+      <!-- custom js -->
+      <script src="js/script.js"></script>
 </body>
-
 </html>
